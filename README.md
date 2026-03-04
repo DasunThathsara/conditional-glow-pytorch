@@ -10,7 +10,9 @@ This project trains a **Glow** normalizing flow model to generate images **condi
 
 ## Folder Structure (Simple / Root-Level)
 
+```
 glow_text_prompt/
+│
 ├── requirements.txt
 ├── model_cond.py
 ├── coco_dataset.py
@@ -22,26 +24,27 @@ glow_text_prompt/
 │       ├── train2017/
 │       │   ├── 000000000009.jpg
 │       │   ├── 000000000025.jpg
+│       │   ├── 000000000030.jpg
 │       │   └── ... (all COCO 2017 train images)
 │       │
 │       └── annotations/
 │           └── captions_train2017.json
 │
-├── runs_textglow/                 # auto-created by training
+├── runs_textglow/                 # auto-created during training
 │   ├── checkpoints/
 │   │   ├── model_010000.pt
 │   │   ├── model_020000.pt
 │   │   └── ...
+│   │
 │   └── samples/
 │       ├── 000500.png
 │       ├── 001000.png
 │       └── ...
 │
-└── samples_text/                  # created by sampling
+└── samples_text/                  # created during sampling
     ├── sample_000.png             # if --single
     └── samples.png                # if grid
-
----
+```
 
 ## Dataset Download (COCO 2017)
 
