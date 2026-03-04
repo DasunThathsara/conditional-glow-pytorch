@@ -1,0 +1,5 @@
+venv
+runs_textglow
+test
+__pycache__
+samples_text
